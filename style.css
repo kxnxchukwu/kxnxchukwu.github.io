@@ -756,15 +756,6 @@ display: inline-block;
   }
 }
 
-details, h2 {
-  margin: 20px auto 80px;
-  font-size: 38px;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 1.5;
-}
-
 details {
   width: 100%;
   min-height: 5px;
@@ -804,6 +795,12 @@ summary:focus {
 
 summary::-webkit-details-marker {
   display: none
+}
+	
+@media screen and (min-width: 400px) {
+  summary {
+    font-weight: 180;
+  }
 }
 
 summary::after {
