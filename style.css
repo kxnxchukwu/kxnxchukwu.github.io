@@ -260,248 +260,158 @@ strong {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 @media screen and (max-width:1024px) {
-  .footer {
-  padding: 50px;
+    .footer {
+    padding: 50px;
 }
 }
 @media screen and (max-width:630px) {
-  .footer {
-  display: block;
+    .footer {
+    display: block;
 }
 }
 @media screen and (max-width:480px) {
-  .footer {
-  padding: 50px 30px;
+    .footer {
+    padding: 50px 30px;
 }
 }
 
 @media screen and (max-width:630px) {
-  .footer__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 }
 
 .footer__links a {
-  position: relative;
-  display: inline-block;
-  color: #007bff!important;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0 15px;
-  outline: 0;
+    position: relative;
+    display: inline-block;
+    color: #007bff!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 15px;
+    outline: 0;
 }
 
 @media screen and (max-width:1024px) {
-  .footer__links a {
-  margin: 0 10px;
+    .footer__links a {
+    margin: 0 10px;
 }
 }
 
 .footer__links a:after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #007bff;
-  content: '';
-  opacity: 0;
-  -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
-  transition: height .3s, opacity .3s, -webkit-transform .3s;
-  transition: height .3s, opacity .3s, transform .3s;
-  transition: height .3s, opacity .3s, transform .3s, -webkit-transform .3s;
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #007bff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+    transition: height .3s, opacity .3s, -webkit-transform .3s;
+    transition: height .3s, opacity .3s, transform .3s;
+    transition: height .3s, opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 @media screen and (max-width:850px) {
-  .footer__links a after {
-  display: none;
+    .footer__links a after {
+    display: none;
 }
 }
 
 .footer__links a:focus:after, .footer__links a:hover:after {
-  height: 2px;
-  border-radius: 3px;
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
 
 .footer__links a .text {
-  font-size: .9rem;
-  display: inline;
-  letter-spacing: 1px;
+    font-size: .9rem;
+    display: inline;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width:850px) {
-  .footer__links a .text {
-  display: none;
+    .footer__links a .text {
+    display: none;
 }
 }
 
 .footer__links img {
-  display: none;
-  width: 22px;
+    display: none;
+    width: 22px;
 }
 
 @media screen and (max-width:850px) {
-  .footer__links img {
-  display: inline-block;
+    .footer__links img {
+    display: inline-block;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 .container-fluid
 {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .lang
 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tools
 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 
 
 @media screen and (min-width: 400px) {
-  .lang{
-  flex: 1 1 auto;
-  width: 50%;
-  }
-  .tools{
-  flex: 1 1 auto;
-  width: 50%;
-  }
+    .lang{
+    flex: 1 1 auto;
+    width: 50%;
+    }
+    .tools{
+    flex: 1 1 auto;
+    width: 50%;
+    }
 }
 
-
-.nav {
-height: 50px;
-width: 100%;
-background-color: #007bff!important;
-position: relative;
-color: #fff;
-font-family: 'Covered By Your Grace', cursive;
-font-size: 2em;
-font-weight: 350;
-letter-spacing: 1px;
-text-shadow: 0 0 10px #1D2A36;
-word-spacing: 2px;
-}
-
-.nav > .nav-header {
-display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-display: inline-block;
-font-size: 22px;
-color: #cee;
-padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-display: none;
-}
-
-.nav > .nav-links {
-display: inline;
-font-size: 18px;
-}
-
-.nav > .nav-links > a {
-display: inline-block;
-padding: 13px 10px 13px 10px;
-text-decoration: none;
-color: #efefec;
-}
-
-.nav > .nav-links > a:hover {
-background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > #nav-check {
-display: none;
-}
-
-@media (max-width:600px) {
-.nav > .nav-btn {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.nav > .nav-btn > label {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: 13px;
-}
-.nav > .nav-btn > label:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.nav > .nav-btn > label > span {
-  display: block;
-  width: 25px;
-  height: 10px;
-  border-top: 2px solid #cee;
-}
-.nav > .nav-links {
-  position: absolute;
-  display: block;
-  width: 100%;
-  background-color:#484848;
-  height: 0px;
-  transition: all 0.3s ease-in;
-  overflow-y: hidden;
-  top: 50px;
-  left: 0px;
-}
-.nav > .nav-links > a {
-  display: block;
-  width: 100%;
-}
-.nav > #nav-check:not(:checked) + .nav-links {
-  height: 0px;
-}
-.nav > #nav-check:checked + .nav-links {
-  height: calc(100vh - 50px);
-  overflow-y: auto;
-}
-}
+svg
+{
+    display: block;
+    height: 96px;
+    width: 96px;
 }
 
 form {
