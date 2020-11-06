@@ -8,163 +8,80 @@
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="icon" href="icon.png">
-        <title>Kenechukwu Ajufo | Developer</title>
-        <meta name="keywords" content="design, development, web, kene, kenechukwu, ajufo, kene_ajufo, javascript, babcock">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="style.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+        <title>Kenechukwu Ajufo</title>
+        <meta name="keywords" content="design, development, web, data sciencist, machine learning engineer, kene, kenechukwu, ajufo, kene_ajufo">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link id = 'pagestyle' rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
                 crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"></script>
-	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <style>
-details {
-  width: 100%;
-  min-height: 5px;
-  padding: 45px 70px 45px 45px;
-  margin: 0 auto;
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap" rel="stylesheet">
+<style>
+.toggle-control {
+  display: block;
   position: relative;
-  font-size: 22px;
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 15px;
-  box-sizing: border-box;
-  transition: all .3s;
-}
-
-details + details {
-  margin-top: 20px;
-}
-
-details[open] {
-  min-height: 50px;
-  background-color: #f6f7f8;
-  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
-}
-
-details ul {
-  color: #96999d;
-  font-weight: 300;
-}
-
-summary {
-  font-weight: 500;
+  padding-left: 100px;
+  margin-bottom: 12px;
   cursor: pointer;
+  font-size: 22px;
+  user-select: none;
 }
-
-summary:focus {
-  outline: none;
-}
-
-summary::-webkit-details-marker {
-  display: none
-}
-	
-@media screen and (min-width: 400px) {
-  summary {
-    font-weight: 180;
-  }
-}
-
-summary::after {
-  padding: 20px;
+.toggle-control input {
   position: absolute;
-  top: 50%;
-  right: 0;
-  color: #007bff;
-  font-family: "Font Awesome 5 Free";
-  font-size: 15px;
-  font-style: normal;
-  font-variant-caps: normal;
-  font-variant-ligatures: normal;
-  font-weight: 900;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  content: "\f078";
-  transform: translateY(-50%);
-  transition: .3s ease;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-
-details[open] summary::after {
-  content: "\f057";
-  font-size: 30px;
+.toggle-control input:checked ~ .control {
+  background-color: dodgerblue;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 55px;
+}
+.toggle-control .control {
+  position: absolute;
   top: 0;
-  transform: translateY(0);
-  transition: .3s ease;
+  left: 0;
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: darkgray;
+  transition: background-color 0.15s ease-in;
 }
-
-details[open] summary:hover::after {
-  animation: pulse 1s ease;
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background: white;
+  transition: left 0.15s ease-in;
 }
-
-@keyframes pulse {
-  25% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-form {
-    border: 2px solid #778899;
-    margin : 0 auto;
-    margin-bottom: 1em;
-    background: #76ABD8;
-    border-radius: 8px;
-    box-shadow: 0 0 40px -10px #000;
-    margin: calc(50vh - 220px) auto;
-    padding: 20px 30px;
-    max-width: calc(100vw - 40px);
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    position: relative
-}
-
-textarea {
-    display : block;
-  
-    padding : 10px;
-    margin  : 10px 0 0 -10px;
-    width   : 340px;
-    height  : 360px;
-
-    resize  : none;
-    overflow: auto;
-  }
-
-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    transition: all .3s;
-    border-bottom: 2px solid #bebed2
-}
-
-input:focus {
-    border-bottom: 2px solid #78788c
-}
-        </style>
+</style>
 
 </head>
 
 
 <body>
-	
-        <div class="container intro animated bounceInUp" id="typewriter">
+                <label class="toggle-control float-right mt-5 pt-5 mr-2 pr-2">
+                        <input type="checkbox" id= 'toggle' checked="">
+                        <span class="control"></span>
+                </label>
+        
+        <div class="container intro animated bounceInUp">
+        <p class="introhello"></p><h1 class="name">Hello! <span onmouseover="shake()" id="emoji" style="display:inline-block;" class="animated">👋🏾</span></h1> 
+        <h2 class="introtagline">I'm<span class="name"> Kenechukwu Ajufo</span>, a data analyst and software engineer based in Dublin, Ireland. I am passionate about <strong class="element"></strong>
+        </h2>
+        <h3 class="introcontact"> <span>Get in touch </span> <span class="emoji pointer">👉🏿</span> <span> <a href="mailto:kenechukwu.ajufo@gmail.com" target="_blank" class="highlight-link">kenechukwu.ajufo@gmail.com</a> </span> </h3>
         </div>
-
 
         <section class="section" id="whatido">
                 <div class="section__title">
@@ -172,190 +89,101 @@ input:focus {
                 </div>
 
                 <div class="section__content">
-                        <div class="d-flex flex-row">
+                        <div class="d-flex flex-row mt-2">
                                 <div class="align-self-start mr-5">
-                                        <h4 class="text-primary text-left">Design what you want.</h4>
-                                        <h5>
-                                                I like to keep it simple. My goals are to focus on content and
-                                                conveying the message that you want to send.
+                                        <h4 class="text-primary display-4 text-left mb-3">Get value from your data.</h4>
+                                        <h5 class="lead">
+                                                I can analyze data, translating the data into valuable and comprehensible insights. I aim to make you make the right decisions and save costs. This is done by building machine learning models to get insights from your data and present results informatively.
                                         </h5>
                                 </div>
                         </div>
 
-                        <div class="d-flex flex-row">
+                        <div class="d-flex flex-row mt-2">
                                 <div class="align-self-start mr-5">
-                                        <h4 class="text-primary text-left">Develop what you need.</h4>
-                                        <h5 class="text-left">
-                                                As a developer, I know how to create your website to run across devices
-                                                using the latest technologies available.
+                                        <h4 class="text-primary display-4 text-left mb-3">Develop what you need.</h4>
+                                        <h5 class="lead">
+                                                As a Web developer, I enjoy building things that live on the internet. I know how to create your website to run across devices
+                                                using the latest technologies available. I can develop websites and web apps that provide engaging, intuitive and pixel-perfect user interfaces.
                                         </h5>
                                 </div>
                         </div>
         </section>
-
-        <div class="d-flex flex-row justify-content-center">
-                <div class="align-self-center">
-                        <h2 class="text-primary text-center">I can help.</h2>
-                        <br />
-                        <h4 class="text-primary text-center"> <span class="bg-success dot animated pulse infinite"></span> I&rsquo;m currently seeking full-time opportunities!</h4>
-                        <br />
-                </div>
-        </div>
 
         <section class="section" id="about">
                 <div class="section__title">
                         <h4>Background</h4>
                 </div>
                 <div class="section__content col-lg-10 col-md-10 col-xs-12">
-                        <p class="lead">Hello! I'm Kenechukwu, a software engineer based in who enjoys building things that live on the internet. I develop websites and web apps that provide engaging, intuitive and pixel-perfect user interfaces.</p>
-                        <p class="lead">I graduated from <a class="" href="http://www.babcock.edu.ng/" target="_blank">Babcock University</a>, where I gained a firm foundation in Computer Science.</p>
-			<p class="lead">I am currently at <a class="" href="http://www.chamsplccom/" target="_blank">Chams PLC</a> where I get to work on a variety of interesting projects and tools on a daily basis.</p>
+                        <p class="lead">I am graduate of Computer Science from <a class="" href="http://www.babcock.edu.ng/" target="_blank">Babcock University</a> with two years’ experience in software  development. Currently pursuing a master’s degree in Data Analytics at the <a href="https://www.ncirl.ie/" target="_blank">National College of Ireland</a>.</p>
+                        <p class='lead'>Studying at NCI has enabled me gather academic experience with Descriptive and Inferential Statistics, Hypothesis testing, building Machine Learning models, visualizing data, and creating dashboards with PowerBI, and finally working with ERP and CRM tools.</p>
+                        <p class="lead">I am interested in the intersection of Machine Learning and Product Management. <strong>I can help</strong>, looking forward to opportunities that allow me to utilize and further develop the skills I have gained in school. </p>
+			<p class="lead"><strong>When I am not at my Computer Screen</strong>, I am listening to music on <a href="https://music.apple.com/ng/playlist/replay-2020/pl.rp-6xxeSMdQYA58" target="_blank"><i class="fab fa-apple"></i> Music</a> or <a href="https://open.spotify.com/playlist/37i9dQZF1EpnctoNq25X93?si=Cq2jguauQ1CkeGcAnX_Ezw" target="_blank"><i class="fab fa-spotify"></i></a>, listening to an audiobook, on Twitter or taking a walk somewhere.</p>
                 </div>
         </section>
-
+        
         <section class="section" id="experience">
                 <div class="section__title">
                         <h4>Experience</h4>
-                        <h6>Places I've Worked</h6>
                 </div>
 
                 <div class="section__content col-sm-12">
-                                <details open>
-                                                <summary>Chams PLC</summary>
-                                                <h4><span class="text-primary">Software Developer</span></h4>
-                                                <h6><span>February 2019 - present</span></h6>
-                                               <ul class="text-left">
-                                                <li>Develop and maintain code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, jQuery and ASP.NET Core MVC.</li>       
-                                                <li>Work closely with designers, other developers and management team to develop, document, and manage in-house and client projects.</li>
-                                               </ul>
-                                </details>
-                                              
-                                <details>
-                                                <summary>Precise Financial Systems</summary>
-                                                <h4 class="text-primary"><span>System Developer Intern</span></h4>
-                                                <h6><span>January 2018 - October 2018</span></h6>
-                                                <ul class="text-left">
-                                                <li>Write clean, modern, performant, maintainable code.</li>
-                                                <li>Monitoring software performance, modifying or updating them as users’ needs evolve</li>
-                                                </ul>
-                                </details>
-                                              
-                                <details>
-                                <summary>GlaxoSmithKline Nigeria PLC</summary>
-                                <h4 class="text-primary"><span>IT Intern</span></h4>
-                                <h6><span>May 2013 - August 2013</span></h6>
-                                <ul class="text-left">
-                                <li>Received calls and logged in complaints from the IT End Users.</li>
-                                <li>Responded to the GSK Remedy Console for IT problem tickets to be solved.</li>
-                                </ul>
-                                </details>
+                        <div class="d-flex justify-content-between mb-3">
+                                <div> <a href="https://www.ncirl.ie/" target="_blank">National College of Ireland</a><br> Computing Lab Assistant</div>
+                                <div>September 2020 - Present</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2 mb-3">
+                                <div> <a href="https://chamsplc.com/" target="_blank">Chams PLC</a><br> Software Developer</div>
+                                <div>February - October 2019</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2 mb-3">
+                                <div> <a href="https://thepfs.biz/" target="_blank">Precise Financial Systems</a><br> System Developer Intern</div>
+                                <div>November 2017 – October 2018</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2 mb-3">
+                                <div> <a href="https://ng.gsk.com/en-gb/" target="_blank">GlaxoSmithKline Nigeria PLC</a><br> IT Intern</div>
+                                <div>May – August 2013</div>
+                        </div>
+                        <div class="row"><h4 class="text-center h2 text-primary col-12 mb-5">My CV</h4>
+                        <div class="d-flex justify-content-center col-6">
+                        <a href="Kenechukwu Ajufo Data.pdf"><h5 class="h4">Data Analyst CV <i class="fas fa-file-pdf"></i></h5></a>
+                        </div>
+                        <div class="d-flex justify-content-center col-6">
+                        <a href="Kenechukwu Ajufo Web.pdf"><h5 class="h4">Web Developer CV <i class="fas fa-file-pdf"></i></h5></a>
+                        </div>
+                        </div>
                 </div>
 
 
         </section>
+
+        <div class="d-block container">
+                <div class="align-self-center">
+                        <h2 class="text-primary h1 text-center">Projects</h2>
+                </div>
+                <div id="test" class="row">
+                </div>
+                <div class="align-self-center mt-5 pt-5">
+                        <h2 class="text-primary h2 text-center">Other Projects</h2>
+                        <a class='d-block text-center h4' href="projects.html">View Projects</a>
+                </div>
+        </div>
 
         <section class="section skills" id="skills">
                 <div class="section__title">
-                        <h4>Skills I Know</h4>
+                        <h4>Skills</h4>
                 </div>
 
                 <div class="section__content">
                         <ul>
-                                <li><mark class="font-italic">Responsive</mark> design.</li>
-                                <li>Standard <mark class="font-italic">HTML5</mark>.</li>
-                                <li>Well-organized <mark class="font-italic">CSS3</mark>.</li>
-                                <li>Preprocessing with <mark class="font-italic">SASS</mark>.</li>
-                                <li><mark class="font-italic">Grids</mark>, <mark class="font-italic">layout</mark>,
-                                        <span>&amp;</span> <mark class="font-italic">typography</mark>.</li>
-                                <li>Strong understanding of Modern <mark class="font-italic">JavaScript</mark> <span>&amp;</span>
-                                        <mark class="font-italic">jQuery.</mark></li>
-                                <li>Ability to effectively <mark class="font-italic">test</mark> <span>&amp;</span>
-                                        <mark class="font-italic">debug</mark> my code <span>&amp;</span> 3rd party
-                                        code. </li>
+                                <li class="mb-3">Languages: <mark class="font-italic">Python</mark>, <mark class="font-italic">R</mark>, <mark class="font-italic">JavaScript</mark>, <mark class="font-italic">C#</mark>.</li>
+                                <li class="mb-3">Web Frameworks: <mark class="font-italic">React</mark>, <mark class="font-italic">ASP.Net MVC</mark>, <mark class="font-italic">jQuery</mark>.</li>
+                                <li class="mb-3">Data Science Libraries: <mark class="font-italic">Pandas</mark>, <mark class="font-italic">NumPy</mark>, <mark class="font-italic">scikit-learn</mark>, <mark class="font-italic">TensorFlow</mark>, <mark class="font-italic">Keras</mark>.</li>
+                                <li class="mb-3">Tools: <mark class="font-italic">Git & GitHub</mark>, <mark class="font-italic">Chrome DevTools</mark>, <mark class="font-italic">Jupyter Notebook</mark>, <mark class="font-italic">SPSS</mark>, <mark class="font-italic">Visual Studio Code</mark>.</li>
                         </ul>
                 </div>
         </section>
 
-        <section class="section" id="Frameworks&Tools">
-                <div class="section__title">
-                        <h4>Frameworks <span>&amp;</span> Tools I Use</h4>
-                </div>
-
-                <div class="section__content">
-                        <ul>
-                                <li><mark class="font-italic">ASP.NET MVC</mark></li>
-                                <li><mark class="font-italic">React</mark></li>
-                                <li><mark class="font-italic">Bootstrap</mark></li>
-                                <li><mark class="font-italic">Gulp</mark></li>
-                                <li><mark class="font-italic">Chrome DevTools</mark></li>
-                                <li><mark class="font-italic">NPM</mark></li>
-                                <li><mark class="font-italic">Git and Github</mark></li>
-                        </ul>
-                </div>
-
-        </section>
-
-        <div class="container" id="svg-container">
-                <h4 class="text-primary text-center d-block">Check out my detailed CV</h4>
-                <br>
-                <div class="row arrow justify-content-center animated rubberBand infinite">&#x25BC;</div>
-                <div class="row justify-content-center">
-                <a class="d-inline-block" id="pdf-svg" href="Kenechukwu Ajufo.pdf" target="_blank">
-                        <br><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1596 380q28 28 48 76t20 88v1152q0 40-28 68t-68 28h-1344q-40 0-68-28t-28-68v-1600q0-40 28-68t68-28h896q40 0 88 20t76 48zm-444-244v376h376q-10-29-22-41l-313-313q-12-12-41-22zm384 1528v-1024h-416q-40 0-68-28t-28-68v-416h-768v1536h1280zm-514-593q33 26 84 56 59-7 117-7 147 0 177 49 16 22 2 52 0 1-1 2l-2 2v1q-6 38-71 38-48 0-115-20t-130-53q-221 24-392 83-153 262-242 262-15 0-28-7l-24-12q-1-1-6-5-10-10-6-36 9-40 56-91.5t132-96.5q14-9 23 6 2 2 2 4 52-85 107-197 68-136 104-262-24-82-30.5-159.5t6.5-127.5q11-40 42-40h22q23 0 35 15 18 21 9 68-2 6-4 8 1 3 1 8v30q-2 123-14 192 55 164 146 238zm-576 411q52-24 137-158-51 40-87.5 84t-49.5 74zm398-920q-15 42-2 132 1-7 7-44 0-3 7-43 1-4 4-8-1-1-1-2-1-2-1-3-1-22-13-36 0 1-1 2v2zm-124 661q135-54 284-81-2-1-13-9.5t-16-13.5q-76-67-127-176-27 86-83 197-30 56-45 83zm646-16q-24-24-140-24 76 28 124 28 14 0 18-1 0-1-2-3z" /></svg>
-                </a>
-                </div>
-        </div>
-
-        <div class="col-10 col-xs-12 mx-auto container">
-
-                <form method="POST" action="https://formspree.io/kenechukwu.ajufo@gmail.com" validate>
-
-                        <h5>Have a question? <strong><a href="#">Ask me anything</a></strong>.</h5>
-                        <div class="left"><svg class="page-icon" width="55px" height="55px" viewBox="0 0 68 65" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <title>icon-mail</title>
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <g transform="translate(0.032000, 0.000000)" class="fill" fill="#000000">
-                                                        <path d="M61.414,21.27 L58.398,21.27 L58.398,0.965 L9.961,0.965 L9.961,21.27 L6.484,21.27 C3.02,21.27 0.203,24.086 0.203,27.551 L0.203,58.16 C0.203,61.621 3.02,64.441 6.484,64.441 L61.414,64.441 C64.879,64.441 67.695,61.621 67.695,58.16 L67.695,27.551 C67.695,24.086 64.883,21.27 61.414,21.27 Z M25.246,39.633 L4.398,57.977 L4.398,27.551 C4.398,27.398 4.457,27.266 4.484,27.129 L25.246,39.633 Z M29.012,41.902 L32.879,44.23 C32.891,44.234 32.902,44.234 32.914,44.238 C33.23,44.422 33.586,44.523 33.953,44.523 C34.32,44.523 34.676,44.422 35,44.238 C35.008,44.23 35.02,44.234 35.031,44.23 L39.789,41.367 L61.254,60.254 L8.148,60.254 L29.012,41.902 Z M43.551,39.102 L63.426,27.129 C63.457,27.266 63.516,27.398 63.516,27.555 L63.516,56.668 L43.551,39.102 Z M14.148,5.152 L54.215,5.152 L54.215,27.781 L33.957,39.992 L14.148,28.062 L14.148,5.152 Z M9.961,25.547 L9.812,25.457 L9.961,25.457 L9.961,25.547 Z"></path>
-                                                        <path d="M19.527,18.254 L34.109,18.254 C35.266,18.254 36.203,17.312 36.203,16.16 C36.203,15.004 35.266,14.066 34.109,14.066 L19.527,14.066 C18.375,14.066 17.434,15.004 17.434,16.16 C17.438,17.316 18.371,18.254 19.527,18.254 Z"></path>
-                                                        <path d="M19.793,12.191 L33.793,12.191 C34.949,12.191 35.887,11.254 35.887,10.098 C35.887,8.941 34.949,8.004 33.793,8.004 L19.793,8.004 C18.637,8.004 17.699,8.941 17.699,10.098 C17.699,11.254 18.637,12.191 19.793,12.191 Z"></path>
-                                                        <path d="M17.699,22.137 C17.699,23.293 18.637,24.23 19.793,24.23 L42.172,24.23 C43.328,24.23 44.266,23.293 44.266,22.137 C44.266,20.98 43.328,20.043 42.172,20.043 L19.793,20.043 C18.637,20.043 17.699,20.98 17.699,22.137 Z"></path>
-                                                </g>
-                                        </g>
-                                </svg>
-                        </div>
-                        <hr>
-
-                        <div class="form-group">
-                                <label class="sr-only" for="name">
-                                        <h6 class="text-primary">Email</h6>
-                                </label>
-                                <input name="name" placeholder="Write your name here..">
-                        </div>
-
-                        <div class="form-group">
-                                <label class="sr-only" for="email">
-                                        <h6 class="text-primary">Email</h6>
-                                </label>
-                                <input type="Email" name= "email" placeholder="Let me know how to contact you back..">
-                        </div>
-
-                        <div class="form-group">
-                                <label class="sr-only" for="message">
-                                        <h6 class="text-primary">Message</h6>
-                                </label>
-                                <input name="message" placeholder="What would you like to tell me..">
-                        </div>
-
-                        <div class="form-group">
-                                <button class="btn btn-outline-primary" type="submit">SEND</button>
-                        </div>
-
-                </form>
-
-        </div>
-        <footer class="footer__links row justify-content-end">
+        <footer class="footer__links row justify-content-center mb-5">
                 <table>
                         <tr>
                                 <td>
@@ -403,7 +231,9 @@ input:focus {
                         </tr>
                 </table>
         </footer>
-        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
         <script src="script.js"></script>
 </body>
 
