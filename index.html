@@ -21,51 +21,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap" rel="stylesheet">
-<style>
-.toggle-control {
-  display: block;
-  position: relative;
-  padding-left: 100px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  user-select: none;
-}
-.toggle-control input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.toggle-control input:checked ~ .control {
-  background-color: dodgerblue;
-}
-.toggle-control input:checked ~ .control:after {
-  left: 55px;
-}
-.toggle-control .control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 100px;
-  border-radius: 25px;
-  background-color: darkgray;
-  transition: background-color 0.15s ease-in;
-}
-.toggle-control .control:after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  width: 40px;
-  height: 40px;
-  border-radius: 25px;
-  background: white;
-  transition: left 0.15s ease-in;
-}
-</style>
 
 </head>
 
@@ -160,7 +115,7 @@
                 <div class="align-self-center">
                         <h2 class="text-primary h1 text-center">Projects</h2>
                 </div>
-                <div id="test" class="row">
+                <div id="test" class="row wow bounceInLeft" style="visibility: visible; animation-name: bounceInLeft;">
                 </div>
                 <div class="align-self-center mt-5 pt-5">
                         <h2 class="text-primary h2 text-center">Other Projects</h2>
