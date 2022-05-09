@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
         <meta charset="UTF-8">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
         <link rel="icon" href="/favicons/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#fff" />
-        <meta
-          name="description"
-          content="Kene's Personal Website"
-        />
+        <meta name="description" content="Kene's Personal Website" />
         <meta name="image" content="https://kxnxchukwu.github.io//img/og.png" />
         <meta property="og:title" content="Kene's Personal Website" />
         <meta property="og:description" content="Simple Website displaying Kene's portofolio" />
         <meta property="og:image" content="https://kxnxchukwu.github.io//img/og.png" />
-    
+
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://kxnxchukwu.github.io//img/og.png" />
@@ -32,18 +30,26 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/favicons/favicons/site.webmanifest">
-        <title>Kenechukwu Ajufo</title>
-        <meta name="keywords" content="design, development, web, data sciencist, machine learning engineer, kene, kenechukwu, ajufo, kene_ajufo">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<link id = 'pagestyle' rel="stylesheet" href="styles/style.css">
+        <title>Kenechukwu Ajufo - Frontend Engineer</title>
+        <meta name="keywords"
+                content="design, development, web, data sciencist, machine learning engineer, kene, kenechukwu, ajufo, kene_ajufo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <link id='pagestyle' rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
                 crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+                integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+                crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap" rel="stylesheet">
 
@@ -51,18 +57,24 @@
 
 
 <body>
-                <label class="toggle-control float-right mt-5 pt-5 mr-2 pr-2">
-                        <input type="checkbox" id= 'toggle' checked="">
-                        <span class="control"></span>
-                </label>
-        
+        <label class="toggle-control float-right mt-5 pt-5 mr-2 pr-2">
+                <input type="checkbox" id='toggle' checked="">
+                <span class="control"></span>
+        </label>
+
         <div class="container intro animated bounceInUp">
-        <p class="introhello"></p><h1 class="name">Hello! <span onmouseover="shake()" id="emoji" style="display:inline-block;" class="animated">👋🏾</span></h1> 
-        <h2 class="introtagline">I'm<span class="name"> Kenechukwu Ajufo</span>, a data analyst and software engineer based in Dublin, Ireland. I am passionate about <strong class="element"></strong>
-        </h2>
-        <h3 class="introcontact"> <span>Get in touch </span> <span class="emoji pointer">👉🏿</span> <span> <a href="mailto:kenechukwu.ajufo@gmail.com" target="_blank" class="highlight-link">kenechukwu.ajufo@gmail.com</a> </span> </h3>
+                <p class="introhello"></p>
+                <h1 class="name">Hello! <span onmouseover="shake()" id="emoji" style="display:inline-block;"
+                                class="animated">👋🏾</span></h1>
+                <h2 class="introtagline">I'm<span class="name"> Kenechukwu Ajufo</span>, a data analyst and software
+                        engineer based in Dublin, Ireland. I am passionate about <strong class="element"></strong>
+                </h2>
+                <h3 class="introcontact"> <span>Get in touch </span> <span class="emoji pointer">👉🏿</span> <span> <a
+                                        href="mailto:kenechukwu.ajufo@gmail.com" target="_blank"
+                                        class="highlight-link">kenechukwu.ajufo@gmail.com</a> </span> </h3>
         </div>
 
+        <!--
         <section class="section" id="whatido">
                 <div class="section__title">
                         <h4>What I can do</h4>
@@ -88,17 +100,36 @@
                                 </div>
                         </div>
         </section>
+        -->
 
         <section class="section" id="about">
                 <div class="section__title">
                         <h4>Background</h4>
                 </div>
                 <div class="section__content col-lg-10 col-md-10 col-xs-12">
-                        <p class="lead">Data Analytics Masters graduate, with a Bachelors in Computer Science interested in solving real world problems using cutting edge technology.</p>
-                        <p class="lead">Two plus years' experience in Software (Web) development, presently working part time as a Computing Lab Assistant at the National College of Ireland assisting lecturers with computing tutorials.</p>
-                        <p class='lead'>Love working with Python and I am comfortable with R. I have gained academic experience building machine learning and deep learning algorithms for multiple applications including Signal Processing, Education, Bank Marketing and Natural Language Processing. I also have experience with Descriptive and Inferential Statistics, Hypothesis testing, visualizing data, and creating dashboards with PowerBI, and finally working with ERP and CRM tools.</p>
-                        <p class="lead">I also have knowledge of Vanilla JavaScript (ES6) and Web Frameworks like React, ASP.Net MVC. I understand of the principles of Responsive Design, Grids, Layout, & Typography, and use these programming languages and principles in building web applications</p>
-			<p class="lead"><strong>When I am not at my Computer Screen</strong>, I am listening to music on <a href="https://music.apple.com/ng/playlist/replay-2021/pl.rp-ARR4tWnxaZLz" target="_blank"><i class="fab fa-apple"></i> Music</a> or <a href="https://open.spotify.com/playlist/37i9dQZF1EpnctoNq25X93?si=Cq2jguauQ1CkeGcAnX_Ezw" target="_blank"><i class="fab fa-spotify"></i></a>, listening to an audiobook, on Twitter or taking a walk somewhere (when it's summer).</p>
+                        <p class="lead">Data Analytics Masters graduate, with a Bachelors in Computer Science interested
+                                in solving real world problems using cutting edge technology.</p>
+                        <p class="lead">Two plus years' experience in Software (Web) development, presently building
+                                seamless and aesthetically pleasing web applications at bxp software.</p>
+                        <p class="lead">Prior to bxp software, I worked part time as a Computing Lab Assistant at the
+                                National College of Ireland where I assisted lecturers and supported students with
+                                computing tutorials.</p>
+                        <p class='lead'>Love working with Python and I am comfortable with R. I have gained academic
+                                experience building machine learning and deep learning algorithms for multiple
+                                applications including Signal Processing, Education, Bank Marketing and Natural Language
+                                Processing. I also have experience with Descriptive and Inferential Statistics,
+                                Hypothesis testing, visualizing data, and creating dashboards with PowerBI, and finally
+                                working with ERP and CRM tools.</p>
+                        <p class="lead">I also have solid knowledge of Vanilla JavaScript (ES6), jQuery, and Web
+                                Frameworks like React, Redux, GraphQL, ASP.Net MVC. I understand of the principles of
+                                Responsive Design, Grids, Layout, & Typography, and use these programming languages and
+                                principles in building web applications</p>
+                        <p class="lead"><strong>When I am not at my Computer Screen</strong>, I am listening to music on
+                                <a href="https://music.apple.com/ng/playlist/replay-2021/pl.rp-ARR4tWnxaZLz"
+                                        target="_blank"><i class="fab fa-apple"></i> Music</a> or <a
+                                        href="https://open.spotify.com/playlist/37i9dQZF1EpnctoNq25X93?si=Cq2jguauQ1CkeGcAnX_Ezw"
+                                        target="_blank"><i class="fab fa-spotify"></i></a>, listening to an audiobook,
+                                on Twitter or taking a walk somewhere (when it's summer).</p>
                 </div>
         </section>
 
@@ -108,20 +139,57 @@
                 </div>
                 <div class="section__content">
                         <ul>
-                                <li class="mb-3">Languages: <mark class="font-italic">Python</mark>, <mark class="font-italic">R</mark>, <mark class="font-italic">JavaScript (ES6)</mark>, <mark class="font-italic">C#</mark>.</li>
-                                <li class="mb-3">Web Technologies & Frameworks: <mark class="font-italic">HTML5</mark>  <mark class="font-italic">CSS3</mark> <mark class="font-italic">React</mark>, <mark class="font-italic">ASP.Net MVC</mark>, <mark class="font-italic">jQuery</mark>,
-                                <mark class="font-italic">LESS</mark>, <mark class="font-italic">Express</mark>, <mark class="font-italic">Bootstrap</mark>, <mark class="font-italic">Mongoose</mark>, <mark class="font-italic">EJS</mark>, <mark class="font-italic">styled-components</mark>.</li>
-                                <li class="mb-3">Data Science Libraries: <mark class="font-italic">Pandas</mark>, <mark class="font-italic">NumPy</mark>, <mark class="font-italic">scikit-learn</mark>, 
-                                <mark class="font-italic">TensorFlow</mark>, <mark class="font-italic">Keras</mark>, <mark class="font-italic">KerasTuner</mark>.</li>
-                                <li class="mb-3">Database Management: <mark class="font-italic">Microsoft SQL</mark>, <mark class="font-italic">MongoDB</mark>, <mark class="font-italic">PostgreSQL</mark>.</li>
-                                <li class="mb-3">Business Intelligence Tools: <mark class="font-italic">Microsoft PowerBI</mark>, <mark class="font-italic">Tableau</mark>, <mark class="font-italic">Dynamics 365</mark>, <mark class="font-italic">SalesForce</mark></li>
-                                <li class="mb-3">Tools: <mark class="font-italic">Git & GitHub</mark>, <mark class="font-italic">Chrome Developer Tools</mark>, <mark class="font-italic">React Developer Tools</mark>, <mark class="font-italic">Postman</mark>, 
-                                <mark class="font-italic">Heroku</mark>, <mark class="font-italic">Jupyter Notebook</mark>, <mark class="font-italic">SPSS</mark>, <mark class="font-italic">Visual Studio Code</mark>, <mark class="font-italic">NPM</mark>, 
-                                <mark class="font-italic">Netlify</mark>.</li>
+                                <li class="mb-3">Languages: <mark class="font-italic">Python</mark>, <mark
+                                                class="font-italic">R</mark>, <mark class="font-italic">JavaScript
+                                                (ES6)</mark>, <mark class="font-italic">TypeScript</mark>, <mark
+                                                class="font-italic">C#</mark>.</li>
+                                <li class="mb-3">Web Technologies & Frameworks: <mark class="font-italic">HTML5</mark>,
+                                        <mark class="font-italic">CSS3</mark>, <mark class="font-italic">React</mark>,
+                                        <mark class="font-italic">GatsbyJS</mark>, <mark
+                                                class="font-italic">JEST</mark>, <mark class="font-italic">ASP.Net
+                                                MVC</mark>, <mark class="font-italic">jQuery</mark>,
+                                        <mark class="font-italic">SASS / LESS</mark>, <mark
+                                                class="font-italic">Express</mark>, <mark
+                                                class="font-italic">Bootstrap</mark>, <mark
+                                                class="font-italic">Mongoose</mark>, <mark
+                                                class="font-italic">EJS</mark>, <mark
+                                                class="font-italic">styled-components</mark>, <mark
+                                                class="font-italic">D3.js</mark>, <mark
+                                                class="font-italic">GraphQL</mark>.
+                                </li>
+                                <li class="mb-3">Data Science Libraries: <mark class="font-italic">Pandas</mark>, <mark
+                                                class="font-italic">NumPy</mark>, <mark
+                                                class="font-italic">scikit-learn</mark>,
+                                        <mark class="font-italic">TensorFlow</mark>, <mark
+                                                class="font-italic">Keras</mark>, <mark
+                                                class="font-italic">KerasTuner</mark>.
+                                </li>
+                                <li class="mb-3">Database Management: <mark class="font-italic">Microsoft SQL</mark>,
+                                        <mark class="font-italic">MongoDB</mark>, <mark
+                                                class="font-italic">PostgreSQL</mark>.</li>
+                                <li class="mb-3">Business Intelligence Tools: <mark class="font-italic">Microsoft
+                                                PowerBI</mark>, <mark class="font-italic">Tableau</mark>, <mark
+                                                class="font-italic">Dynamics 365</mark>, <mark
+                                                class="font-italic">SalesForce</mark></li>
+                                <li class="mb-3">Tools: <mark class="font-italic">Git & GitHub</mark>, <mark
+                                                class="font-italic">Chrome Developer Tools</mark>, <mark
+                                                class="font-italic">React Developer Tools</mark>, <mark
+                                                class="font-italic">Redux Developer Tools</mark>, <mark
+                                                class="font-italic">Postman</mark>,
+                                        <mark class="font-italic">Heroku</mark>, <mark class="font-italic">Jupyter
+                                                Notebook</mark>, <mark class="font-italic">SPSS</mark>, <mark
+                                                class="font-italic">Visual Studio Code</mark>, <mark
+                                                class="font-italic">NPM</mark>,
+                                        <mark class="font-italic">Netlify</mark>,<mark
+                                                class="font-italic">Webpack</mark>.
+                                </li>
+                                <li class="mb-3">Methodologies: <mark class="font-italic">Agile</mark>, <mark
+                                                class="font-italic">SCRUM</mark>, <mark class="font-italic">Test-Driven
+                                                Development</mark>.</li>
                         </ul>
                 </div>
         </section>
-        
+
         <section class="section" id="experience">
                 <div class="section__title">
                         <h4>Experience</h4>
@@ -129,188 +197,272 @@
 
                 <div class="section__content col-sm-12">
                         <div class="d-flex justify-content-between mb-3">
-                                <div> <a href="https://www.telusinternational.com/locations/ireland" target="_blank">TELUS International</a><br> Business Onboarding Analyst</div>
-                                <div>May 2021 - Present</div>
+                                <div> <a href="https://www.bxpsoftware.com/" target="_blank">bxp
+                                                software</a><br>Frontend Developer</div>
+                                <div>January 2022 - Present</div>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                                <div> <a href="https://www.ncirl.ie/" target="_blank">National College of Ireland</a><br> Computing Lab Assistant</div>
-                                <div>September 2020 - Present</div>
+                                <div> <a href="https://www.ncirl.ie/" target="_blank">National College of
+                                                Ireland</a><br> Computing Lab Assistant</div>
+                                <div>September 2020 - April 2022</div>
                         </div>
                         <div class="d-flex justify-content-between mt-2 mb-3">
-                                <div> <a href="https://chamsplc.com/" target="_blank">Chams PLC</a><br> Software Developer</div>
-                                <div>February - October 2019</div>
+                                <div> <a href="https://chamsplc.com/" target="_blank">Chams PLC</a><br> Software
+                                        Developer</div>
+                                <div>January - October 2019</div>
                         </div>
                         <div class="d-flex justify-content-between mt-2 mb-3">
-                                <div> <a href="https://thepfs.biz/" target="_blank">Precise Financial Systems</a><br> System Developer Intern</div>
+                                <div> <a href="https://thepfs.biz/" target="_blank">Precise Financial Systems</a><br>
+                                        System Developer Intern</div>
                                 <div>November 2017 – October 2018</div>
                         </div>
                         <div class="d-flex justify-content-between mt-2 mb-3">
-                                <div> <a href="https://ng.gsk.com/en-gb/" target="_blank">GlaxoSmithKline Nigeria PLC</a><br> IT Intern</div>
+                                <div> <a href="https://ng.gsk.com/en-gb/" target="_blank">GlaxoSmithKline Nigeria
+                                                PLC</a><br> IT Intern</div>
                                 <div>May – August 2013</div>
                         </div>
-                            <a href="/docs/Kenechukwu Ajufo Web.pdf" target="_blank" class="arrow-link ml-2">View My Web Developer CV</a>
-                            <a href="/docs/Kenechukwu Ajufo Data.pdf" target="_blank" class="arrow-link ml-2">View My Data Analyst CV</a>
-                        </div>
+                        <a href="/docs/Kenechukwu Ajufo Web.pdf" target="_blank" class="arrow-link ml-2">View My Web
+                                Developer CV</a>
+                        <a href="/docs/Kenechukwu Ajufo Data.pdf" target="_blank" class="arrow-link ml-2">View My Data
+                                Analyst CV</a>
+                </div>
                 </div>
 
 
         </section>
 
-        <section id="web" class="section featured-projects" data-sr-id="4" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
+        <section id="web" class="section featured-projects" data-sr-id="4"
+                style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;">
                 <div class="section__title">Web Projects</div>
                 <div class="section__content">
-                    <div class="project blistabloc">
-                        <figure class="project__pic">
-                            <a href="https://spotifyprofile-app.herokuapp.com/" target="_blank"> <img src="/img/spotifyprofile.png" alt="spotifyprofile" /></a>
-                        </figure>
-                        <figcaption class="project__caption">
-                            <div class="project__name">
-                                <a href="https://spotifyprofile-app.herokuapp.com/" target="_blank">Spotify Profile App</a>
-                            </div>
-                            <p>A web app built with React that interacts with the Spotify API to visualize user data.</p>
-                        </figcaption>
-                    </div>
-                    <div class="project">
-                        <figure class="project__pic">
-                            <a href="https://quirky-yonath-f3ad5e.netlify.app/" target="_blank">
-                                <img src="/img/countriesapp.png" alt="countriesapp" />
-                            </a>
-                        </figure>
-                        <figcaption class="project__caption">
-                            <div class="project__name"><a href="https://quirky-yonath-f3ad5e.netlify.app/" target="_blank">Countries App</a></div>
-                            <p>Countries App uses the Countries Rest API to show details of different countries in the world.</p>
-                        </figcaption>
-                    </div>
-                    <div class="project">
-                        <figure class="project__pic">
-                            <a href="https://awesome-ptolemy-6ba854.netlify.app/" target="_blank">
-                                <img src="/img/weatherapp.png" alt="weatherapp" />
-                            </a>
-                        </figure>
-                        <figcaption class="project__caption">
-                            <div class="project__name"><a href="https://awesome-ptolemy-6ba854.netlify.app/" target="_blank">Weather App</a></div>
-                            <p>The Weather App uses the Open Weather Map API to show weather information for a particular city. Used this app to practice useEffect and useState in React.</p>
-                        </figcaption>
-                    </div>
-                    <div class="project">
-                        <figure class="project__pic">
-                            <a href="https://thekeeperapp.herokuapp.com/" target="_blank"> <img src="/img/keeperapp.png" alt="keeperapp" /> </a>
-                        </figure>
-                        <figcaption class="project__caption">
-                            <div class="project__name"><a href="https://thekeeperapp.herokuapp.com/" target="_blank">Keeper App</a></div>
-                            <p>The Keeper App functions like a Notes app, Users is able to post and delete notes on the website.</p>
-                        </figcaption>
-                    </div>
-                    <div class="project">
-                        <figure class="project__pic">
-                            <a href="https://kxnxchukwu.github.io/ReactTodoApp/" target="_blank"> <img src="/img/todoapp.png" alt="todoapp" /> </a>
-                        </figure>
-                        <figcaption class="project__caption">
-                            <div class="project__name"><a href="https://kxnxchukwu.github.io/ReactTodoApp/" target="_blank">React Todo App</a></div>
-                            <p>React Todo App made with create-react-app.</p>
-                        </figcaption>
-                    </div>
-                </div>
-            </section>
+                        <div class="project blistabloc">
+                                <figure class="project__pic">
+                                        <a href="https://crwnclthing-live.herokuapp.com/" target="_blank"> <img
+                                                        src="/img/crwnclothing.png" alt="Crown Clothing Homepage" />
+                                        </a>
+                                </figure>
+                                <figcaption class="project__caption">
+                                        <div class="project__name"><a href="https://github.com/kxnxchukwu/crwn-clothing"
+                                                        target="_blank">Crwn Clothing</a></div>
+                                        <p>A e commerce web application built with Create-React-App, Firebase for
+                                                Database Management, Redux for State Management, Stripe API for mock
+                                                payment etc.</p>
+                                </figcaption>
+                        </div>
 
-            <section id="data" class="section other-projects">
+                        <div class="project">
+                                <figure class="project__pic">
+                                        <a href="https://spotifyprofile-app.herokuapp.com/" target="_blank"> <img
+                                                        src="/img/spotifyprofile.png" alt="spotifyprofile" /></a>
+                                </figure>
+                                <figcaption class="project__caption">
+                                        <div class="project__name">
+                                                <a href="https://spotifyprofile-app.herokuapp.com/"
+                                                        target="_blank">Spotify Profile App</a>
+                                        </div>
+                                        <p>A web app built with React that interacts with the Spotify API to visualize
+                                                user data.</p>
+                                </figcaption>
+                        </div>
+
+                        <div class="project">
+                                <figure class="project__pic">
+                                        <a href="https://quirky-yonath-f3ad5e.netlify.app/" target="_blank">
+                                                <img src="/img/countriesapp.png" alt="countriesapp" />
+                                        </a>
+                                </figure>
+                                <figcaption class="project__caption">
+                                        <div class="project__name"><a href="https://quirky-yonath-f3ad5e.netlify.app/"
+                                                        target="_blank">Countries App</a></div>
+                                        <p>Countries App uses the Countries Rest API to show details of different
+                                                countries in the world.</p>
+                                </figcaption>
+                        </div>
+
+                        <div class="project">
+                                <figure class="project__pic">
+                                        <a href="https://thekeeperapp.herokuapp.com/" target="_blank"> <img
+                                                        src="/img/keeperapp.png" alt="keeperapp" /> </a>
+                                </figure>
+                                <figcaption class="project__caption">
+                                        <div class="project__name"><a href="https://thekeeperapp.herokuapp.com/"
+                                                        target="_blank">Keeper App</a></div>
+                                        <p>The Keeper App functions like a Notes app, Users is able to post and delete
+                                                notes on the website.</p>
+                                </figcaption>
+                        </div>
+
+                        <div class="project">
+                                <figure class="project__pic">
+                                        <a href="https://awesome-ptolemy-6ba854.netlify.app/" target="_blank">
+                                                <img src="/img/weatherapp.png" alt="weatherapp" />
+                                        </a>
+                                </figure>
+                                <figcaption class="project__caption">
+                                        <div class="project__name"><a href="https://awesome-ptolemy-6ba854.netlify.app/"
+                                                        target="_blank">Weather App</a></div>
+                                        <p>The Weather App uses the Open Weather Map API to show weather information for
+                                                a particular city. Used this app to practice useEffect and useState in
+                                                React.</p>
+                                </figcaption>
+                        </div>
+                </div>
+        </section>
+
+        <section id="data" class="section other-projects">
                 <div class="section__title">Data Science Projects</div>
                 <div class="section__content">
-                    <div class="project">
-                        <div class="project__name"><a href="https://github.com/kxnxchukwu/MusicGenreClassification" target="_blank" class="arrow-link">Music Genre Classification</a></div>
-                        <p>
-                                For my Master's Thesis, I built two Deep Learning models to automatically classify music genres.
-                        </p>
-                        <div class="project__used">
-                           <span class="project__used__item">Python</span> <span class="project__used__item">Google Colab</span> <span class="project__used__item">Librosa</span>
-                           <span class="project__used__item">TensorFlow</span><span class="project__used__item">Keras</span><span class="project__used__item">Keras Tuner</span>
-                           <span class="project__used__item">Pandas</span><span class="project__used__item">NumPy</span><span class="project__used__item">scikit-learn</span>
-                           <span class="project__used__item">matplotlib</span><span class="project__used__item">scipy</span><span class="project__used__item">seaborn</span>
+                        <div class="project">
+                                <div class="project__name"><a
+                                                href="https://github.com/kxnxchukwu/MusicGenreClassification"
+                                                target="_blank" class="arrow-link">Music Genre Classification</a></div>
+                                <p>
+                                        For my Master's Thesis, I built two Deep Learning models to automatically
+                                        classify music genres.
+                                </p>
+                                <div class="project__used">
+                                        <span class="project__used__item">Python</span> <span
+                                                class="project__used__item">Google Colab</span> <span
+                                                class="project__used__item">Librosa</span>
+                                        <span class="project__used__item">TensorFlow</span><span
+                                                class="project__used__item">Keras</span><span
+                                                class="project__used__item">Keras Tuner</span>
+                                        <span class="project__used__item">Pandas</span><span
+                                                class="project__used__item">NumPy</span><span
+                                                class="project__used__item">scikit-learn</span>
+                                        <span class="project__used__item">matplotlib</span><span
+                                                class="project__used__item">scipy</span><span
+                                                class="project__used__item">seaborn</span>
+                                </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="project__name"><a href="https://github.com/kxnxchukwu/DMML2Project" target="_blank" class="arrow-link">Sentiment Analysis of Hotel Reviews <br> using Deep Learning</a></div>
-                        <p>(Team of three) performed a sentiment analysis on Trip Advisor Reviews dataset. The project focused on using two Deep Learning models (LSTM and BERT) to predict the hotel’s rating using it’s reviews.</p>
-                        <div class="project__used">
-                            <span class="project__used__item">Python</span> <span class="project__used__item">Google Colab</span> <span class="project__used__item">TensorFlow</span> <span class="project__used__item">scikit-learn</span>
-                            <span class="project__used__item">PyTorch</span><span class="project__used__item">Keras</span>
+                        <div class="project">
+                                <div class="project__name"><a href="https://github.com/kxnxchukwu/DMML2Project"
+                                                target="_blank" class="arrow-link">Sentiment Analysis of Hotel Reviews
+                                                <br> using Deep Learning</a></div>
+                                <p>(Team of three) performed a sentiment analysis on Trip Advisor Reviews dataset. The
+                                        project focused on using two Deep Learning models (LSTM and BERT) to predict the
+                                        hotel’s rating using it’s reviews.</p>
+                                <div class="project__used">
+                                        <span class="project__used__item">Python</span> <span
+                                                class="project__used__item">Google Colab</span> <span
+                                                class="project__used__item">TensorFlow</span> <span
+                                                class="project__used__item">scikit-learn</span>
+                                        <span class="project__used__item">PyTorch</span><span
+                                                class="project__used__item">Keras</span>
+                                </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="project__name"><a href="https://github.com/kxnxchukwu/DAPProject" target="_blank" class="arrow-link">Analysis on the Relationship <br> between Population Growth Rate,<br> Life Expectancy and<br> the Gross National Income</a></div>
-                        <p>
-                        (Team of three) analyzed three public datasets from ArcGIS Hub & Datahub. The objective of the project was to demonstrate the team’s knowledge of data wrangling (transforming data from one form to another) and Relational (PostgreSQL) & NoSQL (MongoDB) databases.
-                        </p>
-                        <div class="project__used">
-                            <span class="project__used__item">Python</span> <span class="project__used__item">Pandas</span> <span class="project__used__item">NumPy</span> <span class="project__used__item">pymongo</span>
-                            <span class="project__used__item">psycopg2</span> <span class="project__used__item">requests</span>
+                        <div class="project">
+                                <div class="project__name"><a href="https://github.com/kxnxchukwu/DAPProject"
+                                                target="_blank" class="arrow-link">Analysis on the Relationship <br>
+                                                between Population Growth Rate,<br> Life Expectancy and<br> the Gross
+                                                National Income</a></div>
+                                <p>
+                                        (Team of three) analyzed three public datasets from ArcGIS Hub & Datahub. The
+                                        objective of the project was to demonstrate the team’s knowledge of data
+                                        wrangling (transforming data from one form to another) and Relational
+                                        (PostgreSQL) & NoSQL (MongoDB) databases.
+                                </p>
+                                <div class="project__used">
+                                        <span class="project__used__item">Python</span> <span
+                                                class="project__used__item">Pandas</span> <span
+                                                class="project__used__item">NumPy</span> <span
+                                                class="project__used__item">pymongo</span>
+                                        <span class="project__used__item">psycopg2</span> <span
+                                                class="project__used__item">requests</span>
+                                </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="project__name"><a href="https://github.com/kxnxchukwu/DAPAProject" target="_blank" class="arrow-link">Exploring Student Academic<br> Performance in Portugal<br> using Machine Learning</a></div>
-                        <p> Built a C5.0 Decision Tree Model to predict student academic performance.</p>
-                        <div class="project__used">
-                            <span class="project__used__item">R</span> <span class="project__used__item">R Studio</span> <span class="project__used__item">C5.0</span> <span class="project__used__item">printr</span>
+                        <div class="project">
+                                <div class="project__name"><a href="https://github.com/kxnxchukwu/DAPAProject"
+                                                target="_blank" class="arrow-link">Exploring Student Academic<br>
+                                                Performance in Portugal<br> using Machine Learning</a></div>
+                                <p> Built a C5.0 Decision Tree Model to predict student academic performance.</p>
+                                <div class="project__used">
+                                        <span class="project__used__item">R</span> <span class="project__used__item">R
+                                                Studio</span> <span class="project__used__item">C5.0</span> <span
+                                                class="project__used__item">printr</span>
+                                </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="project__name"><a href="https://github.com/kxnxchukwu/SQL-Practice" target="_blank" class="arrow-link">SQL Practice</a></div>
-                        <p>
-                                Mastering PostgreSQL.
-                        </p>
-                        <div class="project__used">
-                            <span class="project__used__item">SQL</span>
+                        <div class="project">
+                                <div class="project__name"><a href="https://github.com/kxnxchukwu/SQL-Practice"
+                                                target="_blank" class="arrow-link">SQL Practice</a></div>
+                                <p>
+                                        Mastering PostgreSQL.
+                                </p>
+                                <div class="project__used">
+                                        <span class="project__used__item">SQL</span>
+                                </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="project__name"><a href="https://github.com/kxnxchukwu/DMML1Project" target="_blank" class="arrow-link">Analysis of Bank Marketing Campaign, <br> Predicting Outcomes of Customer<br> Purchase Intention and<br> Household Electricity Consumption <br> using Machine Learning</a></div>
-                        <p>
-                               Built various Machine Learning Models for three domains: Banking, Customer Purchase Intention, Household Energy Consumption  
-                        </p>
-                        <div class="project__used">
-                            <span class="project__used__item">Python</span> <span class="project__used__item">R</span> <span class="project__used__item">sklearn</span> <span class="project__used__item">Pandas</span>
-                            <span class="project__used__item">NumPy</span>
+                        <div class="project">
+                                <div class="project__name"><a href="https://github.com/kxnxchukwu/DMML1Project"
+                                                target="_blank" class="arrow-link">Analysis of Bank Marketing Campaign,
+                                                <br> Predicting Outcomes of Customer<br> Purchase Intention and<br>
+                                                Household Electricity Consumption <br> using Machine Learning</a></div>
+                                <p>
+                                        Built various Machine Learning Models for three domains: Banking, Customer
+                                        Purchase Intention, Household Energy Consumption
+                                </p>
+                                <div class="project__used">
+                                        <span class="project__used__item">Python</span> <span
+                                                class="project__used__item">R</span> <span
+                                                class="project__used__item">sklearn</span> <span
+                                                class="project__used__item">Pandas</span>
+                                        <span class="project__used__item">NumPy</span>
+                                </div>
                         </div>
-                    </div>
                 </div>
-            </section>
+        </section>
 
         <footer class="footer__links row justify-content-center mb-5">
                 <table>
                         <tr>
                                 <td>
                                         <a href="mailto:kenechukwu.ajufo@gmail.com" target="_blank" title="email">
-                                                <span class="text d-none d-sm-block">email</span> <img class="d-block d-sm-none"
+                                                <span class="text d-none d-sm-block">email</span> <img
+                                                        class="d-block d-sm-none"
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARSSURBVHhe7ZrLimRFFEULnejMFw5VcKw0+AcqCL4FJ+JA8BcaceA3CA6ci2/Ff1AQ/AIfA4c+u3Gi4kAFH3tRnRAEO/NG3DydlUnvBQuKzIgd51wiMm/dqrMQQgghhBBCCCGEEEIIIYQQQgghXCz/xVWW4cLjsmW48LhsGS48LluGC4/LluHC47JluPAl35K3y1OHHujF9bhkGS58xB/kE/JUoXZ6cL2NWIYLx9Hi3pandBqolZpdL727rkEZLhxvk6PH80f5pDx2qJFaXQ+99M41cO9hGS4cNzwuT/00zO56et7gxmAZLhxbZk7DT/IpeSxQCzW5Wns3u77FjcMyXDg6Zk7DO/IOeVGwNjW42nr7Xd/ixmMZLhy3MXsanpaHhjX32fUtbg6W4cJxiZnT8K48xGlgDdZyNfTu2vUtbi6W4cJxhJnT8LN8Rl4vyGYNt3bv0q5vcfOxDBeOM8ychvdk5Wkgi0y3Vu/orm9xOViGC8dZZk/Ds3JfyLgeu77FZWEZLhzXMnMa3pdrTgNzmOsye9fs+haXiWW4cNyHmdNwRT4nR2Esc1xW79pd3+JysQwXjhXMnIYP5J1yG7zHGDe3d99d3+LysQwXjlVUnIZD7/oWtwaW4cKxkhfkH9Kt4/xQ3nVNfnZjnKzBWpW4dbAMF44V8BBs9GOjlx0/uut7WbPqoaDLxzJcOO7LI/I76bIPIWtTw764bCzDheNabpGvy3+ky2391rw26shcaqAWalqLy8UyXDiu4UH5pXR5rb/LlyXwmf2LdOOcjN18zpNBlhvXSk3UtgaXh2W4cJzhJvmK/FO6rNYv5P2y5W75iXTjWxnD2BayyHTjW6mNGql1BpeFZbhwHOVe+Zl0Ga1/y9fkzXIbz8ursp/La7y3DTLJZo1+bi+1UvMoLgPLcOE4wovyV+nmt34jH5IjcOvZPlLmZ14bgTVYq13bSc3UPoKbj2W4cNwFz2I+lm5e67/yTXmrnOXha87CWqzJ2q6mVnpYehbl5mEZLhy38aj8Xro5rfxF6jF5UbD2yF/F6IWetuHmYBkuHHu4lXtDjuwsvix3Pdc5FNQw8uVOT/TmblfdeCzDhWPLJfm1dONaf5MvyWODmqjN1dxKj/Ta4sZhGS4cgVu2V+Vf0o1p/VzeJ48VaqNGV3srvdLz5nbVjcEyXDhyq7am4GNmdkNxDdx7WIYLx5Ej+5Xsj+wpQM3U7npq3XUNynDhS+760joVZm4qnGW48F0u3badGqO31b1luPBtfiSP8Z9v94We6M31vM0yXHjvzK/up8zooxUsw4W3firvkTcK9ErP7lq0luHCkce3l+Up3F5WQ8/0vuvxehkuHB+QNzpcA3dtsAwXjuEcd22wDBeO4Rx3bbAMF47hHHdtsAwXjuEcd22wDBcely3Dhcdly3DhcdkyXHhctgwXHpctw4XHZUMIIYQQQgghhBBCCCGEEEIIIYRwMZyd/Q9S6qJR/T4kMwAAAABJRU5ErkJggg=="
                                                         alt="email">
                                         </a>
                                 </td>
                                 <td>
                                         <a href="https://twitter.com/kxnxchukwu" target="_blank" title="twitter">
-                                                <span class="text d-none d-sm-block">twitter</span> <img class="d-block d-sm-none"
+                                                <span class="text d-none d-sm-block">twitter</span> <img
+                                                        class="d-block d-sm-none"
                                                         src="data:image/png;base64,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"
                                                         alt="twitter">
                                         </a>
                                 </td>
                                 <td>
                                         <a href="https://instagram.com/kxnxchukwu" target="_blank" title="instagram">
-                                                <span class="text d-none d-sm-block">instagram</span> <img class="d-block d-sm-none"
+                                                <span class="text d-none d-sm-block">instagram</span> <img
+                                                        class="d-block d-sm-none"
                                                         src="data:image/png;base64,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"
                                                         alt="instagram">
                                         </a>
                                 </td>
                                 <td>
                                         <a href="https://github.com/kxnxchukwu" target="_blank" title="github">
-                                                <span class="text d-none d-sm-block">github</span> <img class="d-block d-sm-none"
+                                                <span class="text d-none d-sm-block">github</span> <img
+                                                        class="d-block d-sm-none"
                                                         src="data:image/png;base64,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"
                                                         alt="github">
                                         </a>
                                 </td>
-                                <td style="padding-right: 25px;">
-                                        <a href="https://www.linkedin.com/in/kene-ajufo" target="_blank" title="linkedin">
-                                                <span class="text d-none d-sm-block">linkedin</span> <img class="img d-block d-sm-none"
+                                <td>
+                                        <a href="https://www.linkedin.com/in/kene-ajufo" target="_blank"
+                                                title="linkedin">
+                                                <span class="text d-none d-sm-block">linkedin</span> <img
+                                                        class="img d-block d-sm-none"
                                                         src="data:image/png;base64,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"
                                                         alt="linkedin">
+                                        </a>
+                                </td>
+                                <td style="padding-right: 25px;">
+                                        <a href="https://effulgent-cat-38c450.netlify.app/" target="_blank"
+                                                title="blog">
+                                                <span class="text d-none d-sm-block">blog</span> <img
+                                                        class="img d-block d-sm-none"
+                                                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiNBNUE1QTU7IiBkPSJNNTEyLDQ2Ny40NzhMNTEyLDQ2Ny40NzhDNTEyLDQ5Mi4wNjYsNDkyLjA2Niw1MTIsNDY3LjQ3OCw1MTJINDQuNTIyDQoJQzE5LjkzMyw1MTIsMCw0OTIuMDY2LDAsNDY3LjQ3OGwwLDBjMC0yNC41ODgsMTkuOTMzLTQ0LjUyMiw0NC41MjItNDQuNTIyaDQyMi45NTdDNDkyLjA2Niw0MjIuOTU3LDUxMiw0NDIuODksNTEyLDQ2Ny40Nzh6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojNzc3Nzc3OyIgZD0iTTE2OS43MzksNDc4LjYwOWMwLDQuNjEtMy43MzgsOC4zNDgtOC4zNDgsOC4zNDhINzIuMzQ4Yy00LjYxLDAtOC4zNDgtMy43MzgtOC4zNDgtOC4zNDgNCglzMy43MzgtOC4zNDgsOC4zNDgtOC4zNDhoODkuMDQzQzE2Ni4wMDIsNDcwLjI2MSwxNjkuNzM5LDQ3My45OTgsMTY5LjczOSw0NzguNjA5eiBNNDM5LjY1Miw0NzAuMjYxSDI3Mi42OTYNCgljLTQuNjEsMC04LjM0OCwzLjczOC04LjM0OCw4LjM0OHMzLjczOCw4LjM0OCw4LjM0OCw4LjM0OGgxNjYuOTU3YzQuNjEsMCw4LjM0OC0zLjczOCw4LjM0OC04LjM0OFM0NDQuMjYyLDQ3MC4yNjEsNDM5LjY1Miw0NzAuMjYxDQoJeiBNMjM0Ljg1Miw0NzAuMjYxaC0xLjExM2MtNC42MSwwLTguMzQ4LDMuNzM4LTguMzQ4LDguMzQ4czMuNzM4LDguMzQ4LDguMzQ4LDguMzQ4aDEuMTEzYzQuNjEsMCw4LjM0OC0zLjczOCw4LjM0OC04LjM0OA0KCVMyMzkuNDYyLDQ3MC4yNjEsMjM0Ljg1Miw0NzAuMjYxeiBNMjAwLjM0OCw0NzAuMjYxaC0xLjExM2MtNC42MSwwLTguMzQ4LDMuNzM4LTguMzQ4LDguMzQ4czMuNzM4LDguMzQ4LDguMzQ4LDguMzQ4aDEuMTEzDQoJYzQuNjEsMCw4LjM0OC0zLjczOCw4LjM0OC04LjM0OFMyMDQuOTU4LDQ3MC4yNjEsMjAwLjM0OCw0NzAuMjYxeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0NDQ0FDNDsiIGQ9Ik00NzguNjA5LDE1NS44MjZ2MjQ0Ljg3YzAsMjQuNTg4LTE5LjkzNCw0NC41MjItNDQuNTIyLDQ0LjUyMkg3Ny45MTMNCgljLTI0LjU4OCwwLTQ0LjUyMi0xOS45MzQtNDQuNTIyLTQ0LjUyMnYtMjQ0Ljg3YzAtMjQuNTg4LDE5LjkzMy00NC41MjIsNDQuNTIyLTQ0LjUyMmgzNTYuMTc0DQoJQzQ1OC42NzUsMTExLjMwNCw0NzguNjA5LDEzMS4yMzgsNDc4LjYwOSwxNTUuODI2eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0YyRUZFMjsiIGQ9Ik00MzQuMDg3LDQyMi45NTdINzcuOTEzYy0xMi4yOTUsMC0yMi4yNjEtOS45NjYtMjIuMjYxLTIyLjI2MXYtMjQ0Ljg3DQoJYzAtMTIuMjk1LDkuOTY2LTIyLjI2MSwyMi4yNjEtMjIuMjYxaDM1Ni4xNzRjMTIuMjk1LDAsMjIuMjYxLDkuOTY2LDIyLjI2MSwyMi4yNjF2MjQ0Ljg3DQoJQzQ1Ni4zNDgsNDEyLjk5LDQ0Ni4zODIsNDIyLjk1Nyw0MzQuMDg3LDQyMi45NTd6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojQkZCQkEzOyIgZD0iTTQwNi4yNjEsMjAzLjEzSDEwNS43MzljLTkuMjIsMC0xNi42OTYtNy40NzUtMTYuNjk2LTE2LjY5NmwwLDBjMC05LjIyLDcuNDc1LTE2LjY5NiwxNi42OTYtMTYuNjk2DQoJaDMwMC41MjJjOS4yMiwwLDE2LjY5Niw3LjQ3NSwxNi42OTYsMTYuNjk2bDAsMEM0MjIuOTU3LDE5NS42NTUsNDE1LjQ4MSwyMDMuMTMsNDA2LjI2MSwyMDMuMTN6IE0yNDQuODcsMjQ0Ljg3TDI0NC44NywyNDQuODcNCgljMC05LjIyLTcuNDc1LTE2LjY5Ni0xNi42OTYtMTYuNjk2SDEwNS43MzljLTkuMjIsMC0xNi42OTYsNy40NzUtMTYuNjk2LDE2LjY5NmwwLDBjMCw5LjIyLDcuNDc1LDE2LjY5NiwxNi42OTYsMTYuNjk2aDEyMi40MzUNCglDMjM3LjM5NSwyNjEuNTY1LDI0NC44NywyNTQuMDksMjQ0Ljg3LDI0NC44N3ogTTQyMi45NTcsMjQ0Ljg3TDQyMi45NTcsMjQ0Ljg3YzAtOS4yMi03LjQ3NS0xNi42OTYtMTYuNjk2LTE2LjY5NkgyODMuODI2DQoJYy05LjIyLDAtMTYuNjk2LDcuNDc1LTE2LjY5NiwxNi42OTZsMCwwYzAsOS4yMiw3LjQ3NSwxNi42OTYsMTYuNjk2LDE2LjY5NmgxMjIuNDM1QzQxNS40ODIsMjYxLjU2NSw0MjIuOTU3LDI1NC4wOSw0MjIuOTU3LDI0NC44Nw0KCXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkQ4ODA7IiBkPSJNNDA2LjI2MSwzODRIMTA1LjczOWMtOS4yMiwwLTE2LjY5Ni03LjQ3NS0xNi42OTYtMTYuNjk2di02Ni43ODNjMC05LjIyLDcuNDc1LTE2LjY5NiwxNi42OTYtMTYuNjk2DQoJaDMwMC41MjJjOS4yMiwwLDE2LjY5Niw3LjQ3NSwxNi42OTYsMTYuNjk2djY2Ljc4M0M0MjIuOTU3LDM3Ni41MjUsNDE1LjQ4MiwzODQsNDA2LjI2MSwzODR6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkM4MDU5OyIgZD0iTTEzOS42ODgsMzc0LjIzbC0yLjMzMiwyLjMzMmwwLjA4NiwwLjA4NmwtMTkuMDk4LDE5LjA5OGMtMS4zNywxLjM3LTMuMjI5LDIuMTQtNS4xNjcsMi4xNGwwLDANCgljLTEuOTM4LDAtMy43OTctMC43Ny01LjE2Ny0yLjE0bC0xOS4wOTgtMTkuMDk4bDAuMDg2LTAuMDg2bC0yLjMzMi0yLjMzMmMtNi42NzctNi42NzctNi42NzctMTcuNTAxLDAtMjQuMTc5bDAsMA0KCWM2LjY3Ny02LjY3NywxNy41MDEtNi42NzcsMjQuMTc5LDBsMi4zMzIsMi4zMzJsMi4zMzItMi4zMzJjNi42NzctNi42NzcsMTcuNTAxLTYuNjc3LDI0LjE3OSwwbDAsMA0KCUMxNDYuMzY1LDM1Ni43MjgsMTQ2LjM2NSwzNjcuNTUzLDEzOS42ODgsMzc0LjIzeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0Q2QTE1NDsiIGQ9Ik0zNzYuMjA5LDI5Mi4zNmwtMjIuMjYxLDI5LjY4MmMtNC40NTIsNS45MzYtMTMuMzU3LDUuOTM2LTE3LjgwOSwwbC0yMi4yNjEtMjkuNjgyDQoJYy0xLjQ0NS0xLjkyNy0yLjIyNi00LjI3LTIuMjI2LTYuNjc4VjIyLjI2MUMzMTEuNjUyLDkuOTY2LDMyMS42MTgsMCwzMzMuOTEzLDBoMjIuMjYxYzEyLjI5NSwwLDIyLjI2MSw5Ljk2NiwyMi4yNjEsMjIuMjYxDQoJdjI2My40MjFDMzc4LjQzNSwyODguMDg5LDM3Ny42NTMsMjkwLjQzMywzNzYuMjA5LDI5Mi4zNnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNCMjY5MzI7IiBkPSJNMzcwLjA4NywzMDAuNTIybC0xNi4xMzksMjEuNTE4Yy00LjQ1Miw1LjkzNi0xMy4zNTcsNS45MzYtMTcuODA5LDBMMzIwLDMwMC41MjJIMzcwLjA4N3oiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkQ4ODA7IiBkPSJNMzExLjY1MiwyNTZWMjIuMjYxQzMxMS42NTIsOS45NjYsMzIxLjYxOCwwLDMzMy45MTMsMGgyMi4yNjFjMTIuMjk1LDAsMjIuMjYxLDkuOTY2LDIyLjI2MSwyMi4yNjENCglWMjU2SDMxMS42NTJ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkNDMTU5OyIgZD0iTTM0NS4wNDMsMjU2VjBoMTEuMTNjMTIuMjk1LDAsMjIuMjYxLDkuOTY2LDIyLjI2MSwyMi4yNjFWMjU2SDM0NS4wNDN6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkM4MDU5OyIgZD0iTTM3OC40MzUsMjIuMjYxdjIyLjI2MWgtNjYuNzgzVjIyLjI2MUMzMTEuNjUyLDkuOTY2LDMyMS42MTgsMCwzMzMuOTEzLDBoMjIuMjYxDQoJQzM2OC40NjksMCwzNzguNDM1LDkuOTY2LDM3OC40MzUsMjIuMjYxeiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+                                                        alt="blog">
                                         </a>
                                 </td>
                         </tr>
@@ -320,4 +472,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
         <script src="script.js"></script>
 </body>
+
 </html>
